@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'auth0' => [
+            'driver' => 'session',
+            'provider' => 'auth0-provider',
+        ],
     ],
 
     /*
@@ -69,6 +73,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'auth0-provider' => [
+            'driver' => 'auth0.provider',
+            'repository' => \App\Repositories\UserRepository::class,
+        ],
     ],
 
     /*
